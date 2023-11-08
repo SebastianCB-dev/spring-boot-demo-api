@@ -1,0 +1,333 @@
+/*logo*/
+.logo {
+  font-family: Roboto Mono;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  background: none;
+  background-size: 400%;
+  letter-spacing: 0.2em;
+  -webkit-text-fill-color: white;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% center;
+  }
+
+  100% {
+    background-position: 100% center;
+  }
+}
+
+/*FIN*/
+/* Estilos del menú */
+.menu-container ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-container ul li {
+  display: inline-block;
+  position: relative;
+}
+
+.menu-container strong {
+  font-size: 2rem;
+  letter-spacing: 5px;
+  margin-right: auto;
+}
+
+.menu-container ul li:first-child {
+  margin-right: 100px;
+}
+
+.menu-container ul li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  transition: background-color 0.3s;
+}
+
+.menu-container ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/*Fin*/
+/* Estilos del carrucel */
+.cabecera {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/*FIN*/
+
+/* Estilos de los productos */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.product-card {
+  width: 250px;
+  height: 433px;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+  width: 100%;
+  height: 220px;
+  position: relative;
+}
+
+.card-image img {
+  width: 100%;
+  height: 107%;
+  object-fit: cover;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -ms-transition: all 300ms;
+  -o-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.card-image img:hover {
+  width: 110%;
+}
+
+.card-content {
+  text-align: center;
+  padding: 20px;
+  font-size: 12.5px;
+}
+
+.card-content h3 {
+  margin-top: 0;
+}
+
+/*PRECIOS*/
+.price {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: red;
+}
+
+.price-regular {
+  color: black;
+  font-size: 20px;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: black;
+}
+
+/*FIN*/
+.container-cards {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.card-2 {
+  border: 1px solid rgba(0, 0, 0, 0.452);
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.card-2:hover {
+  color: blue;
+}
+
+.card-2 img {
+  width: 100%;
+  height: 100%;
+
+}
+
+/* <-------------------------------------------------------------> */
+.toggle-btn {
+  position: fixed;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+/*Genero de libros*/
+.Generos {
+  font-family: Roboto Mono;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  position: relative;
+  background: black;
+  background-size: 800%;
+  letter-spacing: 0.2em;
+  -webkit-text-fill-color: white;
+}
+
+.imagencabecera {
+  background-image: url('img/a.jpg');
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 15px;
+  object-fit: cover;
+  position: relative;
+}
+
+.imagencuerpo1 {
+  background-image: url('img/anime.png');
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  text-align: center;
+  width: cover;
+  height: cover;
+}
+
+.imagencuerpo2 {
+  background-image: url('img/manhwa.jpg');
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  text-align: center;
+  width: cover;
+  height: cover;
+}
+
+.imagencuerpo3 {
+  background-image: url('img/Comics.jpg');
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  text-align: center;
+  width: cover;
+  height: cover;
+}
+
+.imagencuerpo4 {
+  background-image: url('img/Terror.jpg');
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  text-align: center;
+  width: cover;
+  height: cover;
+}
+
+.imagencuerpo5 {
+  background-image: url('img/Fantasia.png');
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  text-align: center;
+  width: cover;
+  height: cover;
+}
+
+.imagencuerpo6 {
+  background-image: url('img/Infantiles.webp');
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  text-align: center;
+  width: cover;
+  height: cover;
+}
+
+.Favoritos {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  font-family: roboot;
+}
+
+p {
+  font-family: Roboto Mono;
+}
+
+a {
+  font-family: Roboto Mono;
+}
+
+h3 {
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+@keyframes textofield {
+  0% {
+    background-position: 0% center;
+  }
+
+  100% {
+    background-position: 100% center;
+  }
+}
+
+/*FIN*/
+/*footer*/
+footer {
+  background-color: gray;
+  color: white;
+  padding: 33px 50vh;
+  margin: 10px;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer p {
+  margin: 0;
+}
+
+.texto {
+  text-align: center;
+}
