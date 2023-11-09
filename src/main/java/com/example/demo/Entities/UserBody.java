@@ -1,6 +1,6 @@
-package com.example.demo.Model;
+package com.example.demo.Entities;
 
-public class User {
+public class UserBody {
   private String gmail;
   private String password;
   private String name;
